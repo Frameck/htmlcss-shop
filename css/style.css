@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: calc(100% / 3);
+    position: relative;
+}
+
+.card figure img {
+    position: absolute;
+}
+
+.card figure img:nth-child(1) {
+    width: calc(100vw / 3);
+    z-index: 1;
+}
+
+.card:hover .card figure img:nth-child(2){
+    z-index: 2;
+}
