@@ -4,20 +4,38 @@
     box-sizing: border-box;
 }
 
+.container {
+    padding: 20px 100px;
+}
+
 .card {
     width: calc(100% / 3);
+    height: 630px;
     position: relative;
+    display: inline-block;
 }
 
 .card figure img {
-    position: absolute;
+    max-width: 100%;
 }
 
 .card figure img:nth-child(1) {
-    width: calc(100vw / 3);
+    position: absolute;
     z-index: 1;
+}
+
+.card figure img:nth-child(2) {
+    position: relative;
 }
 
 .card:hover .card figure img:nth-child(2){
     z-index: 2;
+}
+
+.card figcaption {
+    letter-spacing: 1.2px;
+}
+
+figcaption > div:nth-child(2) {
+    font-weight: bold;
 }
