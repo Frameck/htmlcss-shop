@@ -65,12 +65,10 @@ figcaption > div:nth-child(2) {
 }
 
 .overlay {
-    position: absolute;
     height: 20px;
     font-size: 15px;
     color: white;
     z-index: 2;
-    bottom: 80px;
     text-align: center;
     padding: 2px;
 }
@@ -78,11 +76,17 @@ figcaption > div:nth-child(2) {
 .sconto {
     width: 40px;
     background-color: rgb(240, 64, 64);
-    left: 0;
 }
 
 .badge {
     width: 85px;
     background-color: rgb(31, 162, 83);
-    left: 43px;
+}
+
+.badge-container {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    display: inline-block;
+    z-index: 2;
 }
